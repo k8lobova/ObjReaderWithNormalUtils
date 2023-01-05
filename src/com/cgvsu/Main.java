@@ -29,6 +29,18 @@ public class Main {
         System.out.println("Texture vertices: " + model.getTextureVertices().size());
         System.out.println("Normals: " + model.getNormals().size());
         System.out.println("Polygons: " + model.getPolygons().size());
+
+        System.out.println();
+
         NormalUtils.print(model);
+        NormalUtils.addNormals(model);
+
+        System.out.println();
+
+        System.out.println("Vertices: " + model.getVertices().size());
+        System.out.println("Texture vertices: " + model.getTextureVertices().size());
+        System.out.println("Normals: " + model.getNormals().size());
+        System.out.println("Polygons: " + model.getPolygons().size());
+
     }
 }
